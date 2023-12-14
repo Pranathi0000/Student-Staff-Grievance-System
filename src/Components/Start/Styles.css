@@ -1,0 +1,50 @@
+/* styles.css */
+body{
+  background-color: #d9ffdb;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between icons */
+  margin-bottom: 20px; /* Adjust the margin between rows */
+}
+
+.icon-container {
+  background-color: #f2f2f2;
+  padding: 20px; /* Add padding for better spacing */
+  border-radius: 10px;
+} 
+  .icon {
+    color: #333;
+    font-size: 78px;
+    margin-bottom: 20px; /* Adjust margin between icon and text */
+    display: block; /* Ensures each icon and text are displayed in a block */
+  }
+  
+  .icon:hover {
+    color: #ff8800; /* Change this to the desired hover color */
+  }
+  .row .icon:not(:last-child) {
+    margin-right: 30px; /* Increase the gap between icons */
+  }
+  
+  .icon-container span {
+    text-decoration: none;
+    color: #333; /* Change this to the desired color for the text */
+    font-weight: bold; /* Optionally make the text bold */
+    display: block; /* Ensure each span is on a new line */
+  }
+
+  .icon-container span:hover{
+    color: red;
+  }
+  
+  

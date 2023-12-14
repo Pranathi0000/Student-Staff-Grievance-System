@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+
+import {  Routes, Route } from 'react-router-dom';
+import ComplaintsDisplay from './Components/Display/ComplaintsDisplay';
+import ComplaintForm from './Components/Complaint/ComplaintForm';
+import Home from './Components/Start/Home';
+import StudentLogin from './Components/StudentAuth/StudentLogin';
+import StaffLogin from './Components/StaffAuth/StaffLogin';
+import HODLogin from './Components/HODAuth/HODLogin';
+import ManagementLogin from './Components/MangAuth/ManagementLogin';
+import ComplaintsByDepartment from './Components/Display/ComplaintsByDepartment';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/complaint-form" element={<ComplaintForm />} />
+      <Route path="/complaints-display" element={<ComplaintsDisplay />} />
+      <Route path="/studentlogin" element={<StudentLogin/>}/>
+      <Route path="/stafflogin" element={<StaffLogin/>}/>
+      <Route path="/hodlogin"  element={<HODLogin />}/>
+      <Route path="/deptcomplaints/:department" element={<ComplaintsByDepartment/>}/>
+      <Route path="/manglogin" element={<ManagementLogin/>}/>
+    </Routes>
+    
   );
 }
 

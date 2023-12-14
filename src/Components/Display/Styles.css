@@ -1,0 +1,48 @@
+/* Add this CSS in your main CSS file or a separate CSS file */
+.complaints-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.complaints-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.complaints-table th,
+.complaints-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.complaints-table th {
+  background-color: #f7f7f7;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.complaints-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.complaints-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.status-dropdown {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.status-dropdown:hover {
+  background-color: #f0f0f0;
+}
+
